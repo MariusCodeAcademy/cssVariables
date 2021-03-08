@@ -1,0 +1,44 @@
+/* globals */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Variables */
+
+:root {
+  /* --<kintamojo pavadinimas>: <kintamojo reiksme> */
+  --main-color: blue;
+  --dark-color: #333;
+  --small-radius: 5px;
+  --large-radius: 16px;
+}
+
+.grid-container {
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Posts Section */
+.post {
+  background-color: var(--main-color);
+  padding: 1rem;
+  border-radius: var(--large-radius);
+}
+
+.post__title {
+  color: var(--dark-color);
+}
+
+.post__action {
+  font-size: 1.2rem;
+  margin-top: 1em;
+  border-radius: var(--small-radius);
+}
