@@ -14,8 +14,10 @@ body {
   /* --<kintamojo pavadinimas>: <kintamojo reiksme> */
   --main-color: tomato;
   --dark-color: #333;
-  --small-radius: 5px;
+  --small-radius: 10px;
   --large-radius: 16px;
+  --btn-bg: rgb(47, 47, 47);
+  --btn-text-color: rgb(235, 132, 132);
 }
 
 .grid-container {
@@ -41,6 +43,8 @@ body {
   font-size: 1.2rem;
   margin-top: 1em;
   border-radius: var(--small-radius);
+  background-color: var(--btn-bg);
+  color: var(--btn-text-color);
 }
 
 /* Features */
@@ -56,6 +60,7 @@ body {
   padding: 1rem;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -69,4 +74,11 @@ body {
 
 .feature__title {
   color: var(--dark-color);
+}
+
+.feature__link {
+  font-size: 1.1rem;
+  border-radius: var(--small-radius);
+  background-color: var(--btn-bg);
+  color: var(--btn-text-color);
 }
